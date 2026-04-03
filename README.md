@@ -1,9 +1,7 @@
 # sowm fork w/ patches
-and an ICCCM function sorry.
-
-<br>
-
-Patches available here: https://github.com/dylanaraps/sowm/pulls
+goals:
+- fix ghost alt-tabbing
+- learn everything
 
 ## Default Keybindings
 
