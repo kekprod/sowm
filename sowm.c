@@ -92,6 +92,14 @@ void win_add(Window w) {
     if (!(c = (client *) calloc(1, sizeof(client))))
         exit(1);
 
+    Window transient;
+    XWindowAttributes wa;
+
+    if (!XGetWindowAttributes(d, w, &wa)
+        || wa.override_redirect
+        || XGetTransientForHint(d, w, &transient)
+        return;
+
     c->w = w;
 
     if (list) {
